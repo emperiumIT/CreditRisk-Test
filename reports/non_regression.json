@@ -1,0 +1,41 @@
+{
+  "reference": "model_v1",
+  "candidat": "model_v2",
+  "taille_test": 1000,
+  "defauts_test": 221,
+  "metriques_reference": {
+    "accuracy": 0.726,
+    "precision": 0.4358,
+    "rappel": 0.8145,
+    "f1": 0.5678,
+    "roc_auc": 0.821
+  },
+  "metriques_candidat": {
+    "accuracy": 0.702,
+    "precision": 0.4094,
+    "rappel": 0.7873,
+    "f1": 0.5387,
+    "roc_auc": 0.8092
+  },
+  "criteres": {
+    "rappel": {
+      "ecart": -0.0272,
+      "tolerance": -0.02,
+      "ic95": [
+        -0.0577,
+        0.0
+      ],
+      "conforme": false
+    },
+    "f1": {
+      "ecart": -0.0291,
+      "tolerance": -0.02,
+      "ic95": [
+        -0.0487,
+        -0.0101
+      ],
+      "conforme": false
+    }
+  },
+  "decision": "REFUSEE"
+}

@@ -1,0 +1,3 @@
+# Tests de charge (Partie VI) - non installé dans la CI
+-r requirements.txt
+locust==2.47.0

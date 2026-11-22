@@ -1,0 +1,79 @@
+{
+  "configuration": {
+    "os": "Linux 6.18.44-fc-v726",
+    "processeur": "x86_64",
+    "python": "3.13.18",
+    "serveur": "uvicorn, 1 worker, local (127.0.0.1)"
+  },
+  "objectif": "P95 de /predict < 200 ms",
+  "inference_modele": {
+    "n": 1000,
+    "moyenne_ms": 0.7,
+    "mediane_ms": 0.61,
+    "p95_ms": 1.09,
+    "max_ms": 2.36
+  },
+  "api_sequentiel": {
+    "utilisateurs": 1,
+    "n": 500,
+    "moyenne_ms": 3.67,
+    "mediane_ms": 3.5,
+    "p95_ms": 4.58,
+    "max_ms": 11.89,
+    "debit_req_s": 270.0,
+    "erreurs": 0
+  },
+  "charge_progressive": [
+    {
+      "utilisateurs": 1,
+      "n": 500,
+      "moyenne_ms": 3.83,
+      "mediane_ms": 3.62,
+      "p95_ms": 4.56,
+      "max_ms": 67.61,
+      "debit_req_s": 259.0,
+      "erreurs": 0
+    },
+    {
+      "utilisateurs": 5,
+      "n": 500,
+      "moyenne_ms": 13.92,
+      "mediane_ms": 13.52,
+      "p95_ms": 19.98,
+      "max_ms": 31.52,
+      "debit_req_s": 356.5,
+      "erreurs": 0
+    },
+    {
+      "utilisateurs": 10,
+      "n": 500,
+      "moyenne_ms": 27.13,
+      "mediane_ms": 26.33,
+      "p95_ms": 39.57,
+      "max_ms": 64.93,
+      "debit_req_s": 365.6,
+      "erreurs": 0
+    },
+    {
+      "utilisateurs": 20,
+      "n": 500,
+      "moyenne_ms": 49.04,
+      "mediane_ms": 48.7,
+      "p95_ms": 61.43,
+      "max_ms": 81.84,
+      "debit_req_s": 401.9,
+      "erreurs": 0
+    },
+    {
+      "utilisateurs": 50,
+      "n": 500,
+      "moyenne_ms": 129.46,
+      "mediane_ms": 101.57,
+      "p95_ms": 338.71,
+      "max_ms": 614.92,
+      "debit_req_s": 365.0,
+      "erreurs": 0
+    }
+  ],
+  "objectif_respecte": true
+}

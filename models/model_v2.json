@@ -1,0 +1,49 @@
+{
+  "version": "2.0.0",
+  "date_entrainement": "2026-11-22",
+  "algorithme": "LogisticRegression (class_weight=balanced) + StandardScaler",
+  "hyperparametres": {
+    "C": 0.001
+  },
+  "features": [
+    "age",
+    "revenu_mensuel",
+    "montant_credit",
+    "duree_mois",
+    "anciennete_activite"
+  ],
+  "seuils_niveau_risque": {
+    "moyen": 0.3,
+    "eleve": 0.6
+  },
+  "donnees": "Synthétiques (generate_data.py, graine 42) - test du système uniquement",
+  "domaine_entrainement": {
+    "age": [
+      18.0,
+      75.0
+    ],
+    "revenu_mensuel": [
+      30000.0,
+      1745000.0
+    ],
+    "montant_credit": [
+      50000.0,
+      11960000.0
+    ],
+    "duree_mois": [
+      3.0,
+      60.0
+    ],
+    "anciennete_activite": [
+      0.0,
+      40.0
+    ]
+  },
+  "metriques_test": {
+    "accuracy": 0.702,
+    "precision": 0.4094,
+    "rappel": 0.7873,
+    "f1": 0.5387,
+    "roc_auc": 0.8092
+  }
+}
